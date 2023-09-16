@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            height: 100%;
+            padding: 2rem;
+            margin: 2rem;
+            background-color: aliceblue;
+            
+        }
+        .container{
+            display: flex;
+            border: 2px solid black;
+            width: 100%;
+            margin-bottom: 2rem;
+            box-shadow: 15px 15px 10px #888888;
+
+        }
+        .first{
+            background-color: black;
+            color: white;
+            width: 20%;
+            text-align: center;
+            font-size: 2rem;
+            padding: 1.5rem 0;
+        }
+        .second{
+            background-color: white;
+            color: black;
+            width: 60%;
+            font-size: 2rem;
+        }
+
+        .second ul{
+            display: flex;
+            list-style: none;
+            justify-content: space-evenly;
+        }
+        .third{
+            background-color: black;
+            color: white;
+            font-size: 2rem;
+            text-align: center;
+            width: 20%;  
+            padding: 1.5rem 0;         
+        }
+
+        .li-first{
+            font-weight: bold;
+        }
+        .li-second{
+            color: gray;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <% menuData.forEach((item)=>{ %>
+    <div class="container">
+        <div class="first">
+            <%= item.FoodName %>
+        </div>
+        <div class="second">
+            <ul>
+                <li class="li-first"><%= item.from %></li>
+                <li class="li-second"><%= item.quantity %> ml</li>
+                <li class="li-third">Rs. <%= item.price %></li>
+            </ul>
+        </div>
+        <div class="third">
+            detail
+        </div>
+    </div>
+    <% }) %>
+</body>
+</html>

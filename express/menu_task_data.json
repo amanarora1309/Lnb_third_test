@@ -1,0 +1,23 @@
+[
+  {
+    "id": 0,
+    "FoodName": "Paneer Masala",
+    "from": "Punjab",
+    "quantity": "250 ",
+    "price": "300"
+  },
+  {
+    "id": 1,
+    "FoodName": "Gravy Gatta ",
+    "from": "Rajasthan",
+    "quantity": "200",
+    "price": "150"
+  },
+  {
+    "id": 2,
+    "FoodName": "Malai Pulao",
+    "from": "Kashmir",
+    "quantity": "300",
+    "price": "250"
+  }
+]
